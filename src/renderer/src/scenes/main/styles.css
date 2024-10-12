@@ -41,6 +41,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      /* Overlay the gradient extracted color on top */
+      background-image: linear-gradient(
+        to top right,
+        rgba(var(--extracted-color-rgb, 0, 0, 0), 0.3) 0%,
+        rgba(var(--extracted-color-rgb, 0, 0, 0), 0) 50%
+      );
+      background-blend-mode: overlay;
     }
 
     .queue-modal {
